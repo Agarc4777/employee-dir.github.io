@@ -1,12 +1,24 @@
-import Header from "./components/Header"
-import Results from './components/Results';
+import Header from "./components/pages/Header"
+import Results from './components/pages/Results';
+import randomuser from "./Utils/API"
 import './App.css';
+import { useState, useEffect } from "react";
 
 
 function App() {
+  const [users, setUsers] = useState([]);
+  useEffect(
+    () => {
+      randomuser.Employee().then(res => {
+        setUsers(res.data.results)
+      })
+    }, [])
   return (
     <div className="App">
-      {/* header and results go here */}
+      <Results
+      users={users}
+      />
+
     </div>
   );
 }

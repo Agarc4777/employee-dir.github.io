@@ -12,31 +12,30 @@ function Results(props) {
           <th>First Name</th>
           <th>Last Name</th>
           <th>Email</th>
-          <th>Department</th>
+          <th>Phone Number</th>
           {/* <th></th> */}
         </tr></thead>
         <tbody>
-          {<tr>
+          {props.users.map((user) => (<tr>
             <td>
               <h4 class="ui image header">
-                <img src="/images/avatar2/small/lena.png" class="ui mini rounded image"/>
+                <img src={user.picture.thumbnail} class="ui mini rounded image"/>
                 <div class="content">
-                  Lena
                 </div>
             </h4></td>
             <td>
-              info goes here
+              {user.name.first}
             </td>
              <td>
-              info goes here
+              {user.name.last}
             </td>
             <td>
-              info goes here
+              {user.email}
             </td>
              <td>
-              info goes here
+              {user.phone}
             </td>
-          </tr>}
+          </tr>))};
         </tbody>
       </table>
      )

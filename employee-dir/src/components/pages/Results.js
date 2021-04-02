@@ -5,18 +5,30 @@ const styles = {
 } 
 
 function Results(props) {
+  const i = (props.sortedUsers.length);
+  const sortEmps = () => {
+    const sortedResults =
+        props.sortedUsers.sort(function (a, b) {
+            if (a.name.first < b.name.first) { return -1; }
+            if (a.name.first > b.name.first) { return 1; }
+            return 0;
+        });
+    console.log(sortedResults);
+    props.setsortedUsers(sortedResults);
+  };
      return(
         <table class="ui very basic collapsing celled table" style={styles.table}>
         <thead>
-          <tr><th>Employee</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-          <th>Phone Number</th>
-          {/* <th></th> */}
-        </tr></thead>
+          <tr>
+            <th>Employee</th>
+            <button onClick={sortEmps}><th>First Name</th></button>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
         <tbody>
-          {props.users.map((user) => (<tr>
+          {props.sortedUsers.map((user) => (<tr>
             <td>
               <h4 class="ui image header">
                 <img src={user.picture.thumbnail} class="ui mini rounded image"/>

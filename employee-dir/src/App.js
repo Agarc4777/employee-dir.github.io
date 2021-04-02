@@ -7,10 +7,12 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [users, setUsers] = useState([]);
+  const [sortedUsers, setsortedUsers] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(
     () => {
       randomuser.Employee().then(res => {
+        setsortedUsers(res.data.results)
         setUsers(res.data.results)
       })
     }, [])
@@ -19,14 +21,16 @@ function App() {
       console.log(name, value)
       setSearch(value);
     }
+    console.log(sortedUsers);
   return (
     <div className="App">
       <div class="ui input">
         <input type="text" placeholder="Search..." onChange={handleInputChange} name="search"/>
-        sear
       </div>
+      <Header />
       <Results
-      users={users}
+      setsortedUsers= {setsortedUsers}
+      sortedUsers= {sortedUsers.filter(user => user.name.first.toLowerCase().search(search.toLowerCase()) !== -1)}
       />
 
     </div>

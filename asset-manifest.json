@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/employee-dir.github.io/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/employee-dir.github.io/static/js/main.c1727137.chunk.js",
+    "main.js.map": "/employee-dir.github.io/static/js/main.c1727137.chunk.js.map",
+    "runtime-main.js": "/employee-dir.github.io/static/js/runtime-main.6cd5b2be.js",
+    "runtime-main.js.map": "/employee-dir.github.io/static/js/runtime-main.6cd5b2be.js.map",
+    "static/css/2.f7d5f77a.chunk.css": "/employee-dir.github.io/static/css/2.f7d5f77a.chunk.css",
+    "static/js/2.0444093e.chunk.js": "/employee-dir.github.io/static/js/2.0444093e.chunk.js",
+    "static/js/2.0444093e.chunk.js.map": "/employee-dir.github.io/static/js/2.0444093e.chunk.js.map",
+    "static/js/3.50445ee7.chunk.js": "/employee-dir.github.io/static/js/3.50445ee7.chunk.js",
+    "static/js/3.50445ee7.chunk.js.map": "/employee-dir.github.io/static/js/3.50445ee7.chunk.js.map",
+    "index.html": "/employee-dir.github.io/index.html",
+    "static/css/2.f7d5f77a.chunk.css.map": "/employee-dir.github.io/static/css/2.f7d5f77a.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/employee-dir.github.io/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.0444093e.chunk.js.LICENSE.txt": "/employee-dir.github.io/static/js/2.0444093e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cd5b2be.js",
+    "static/css/2.f7d5f77a.chunk.css",
+    "static/js/2.0444093e.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.c1727137.chunk.js"
+  ]
+}
